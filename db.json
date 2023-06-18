@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Learning Laravel",
+      "day": "Sunday",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Learning Vue",
+      "day": "Monday",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Learning Flutter",
+      "day": "Thursday ",
+      "reminder": false
+    },
+    {
+      "id": 77435,
+      "text": "Go to dentist",
+      "day": "March 10th at 3:00pm",
+      "reminder": false
+    }
+  ]
+}
