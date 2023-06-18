@@ -1,15 +1,50 @@
 <template>
   <div class="container">
     <Header title="Task Tracker"/>
+    <Tasks :tasks="tasks"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Tasks from './components/Tasks'
+
+
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Tasks
+  },
+  data(){
+    return {
+      tasks: []
+    }
+  },
+  created(){
+    this.tasks = [
+      {
+        id: 1,
+        text: "Learning Laravel",
+        day: "Sunday",
+        reminder: true
+      },
+      
+      {
+        id: 2,
+        text: "Learning Vue",
+        day: "Monday",
+        reminder: true
+      },
+
+      {
+        id: 3,
+        text: "Learning Flutter",
+        day: "Thursday ",
+        reminder: true
+      },
+
+    ]
   }
 }
 </script>
